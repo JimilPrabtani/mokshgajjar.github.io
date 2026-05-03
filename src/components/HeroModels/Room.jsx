@@ -10,9 +10,12 @@ import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
 
 export function Room(props) {
-  const { nodes, materials } = useGLTF("/models/optimized-room.glb");
+  const roomModelUrl = `${import.meta.env.BASE_URL}models/optimized-room.glb`;
+  const matcapTextureUrl = `${import.meta.env.BASE_URL}images/textures/mat1.png`;
+
+  const { nodes, materials } = useGLTF(roomModelUrl);
   const screensRef = useRef();
-  const matcapTexture = useTexture("/images/textures/mat1.png");
+  const matcapTexture = useTexture(matcapTextureUrl);
 
   const curtainMaterial = new THREE.MeshPhongMaterial({
     color: "#d90429",
@@ -174,4 +177,4 @@ export function Room(props) {
   );
 }
 
-useGLTF.preload("/models/optimized-room.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/optimized-room.glb`);
