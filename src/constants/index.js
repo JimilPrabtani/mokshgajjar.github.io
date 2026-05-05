@@ -1,10 +1,10 @@
 const navLinks = [
     {
-        name: "Work",
+        name: "Projects",
         link: "#work",
     },
     {
-        name: "Experience",
+        name: "Activities",
         link: "#experience",
     },
     {
@@ -32,10 +32,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 9, suffix: "+", label: "Years of Schooling" },
+  { value: 15, suffix: "+", label: "School Projects" },
+  { value: 3, suffix: "+", label: "Hobbies Explored" },
+  { value: 100, suffix: "%", label: "Passion & Dedication" },
 ];
 
 const logoIconsList = [
@@ -77,71 +77,71 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: withBase("/images/seo.png"),
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Creative Thinking",
+    desc: "Approaching problems with a fresh perspective and finding unique solutions.",
   },
   {
     imgPath: withBase("/images/chat.png"),
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Effective Teamwork",
+    desc: "Collaborating with peers and mentors to achieve shared goals and learn together.",
   },
   {
     imgPath: withBase("/images/time.png"),
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Time Management",
+    desc: "Balancing school academics, sports, and hobbies with discipline and focus.",
   },
 ];
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "React",
     imgPath: withBase("/images/logos/react.png"),
   },
   {
-    name: "Python Developer",
+    name: "Python",
     imgPath: withBase("/images/logos/python.svg"),
   },
   {
-    name: "Backend Developer",
+    name: "Node.js",
     imgPath: withBase("/images/logos/node.png"),
   },
   {
-    name: "Interactive Developer",
+    name: "Three.js",
     imgPath: withBase("/images/logos/three.png"),
   },
   {
-    name: "Project Manager",
+    name: "Git",
     imgPath: withBase("/images/logos/git.svg"),
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: withBase("/models/react_logo-transformed.glb"),
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Python",
     modelPath: withBase("/models/python-transformed.glb"),
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Node.js",
     modelPath: withBase("/models/node-transformed.glb"),
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Three.js",
     modelPath: withBase("/models/three.js-transformed.glb"),
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git",
     modelPath: withBase("/models/git-svg-transformed.glb"),
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -150,39 +150,39 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Moksh shows incredible agility and focus on the table. His dedication to improving his rallies and serves is commendable.",
     imgPath: withBase("/images/exp1.png"),
     logoPath: withBase("/images/logo1.png"),
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Table Tennis Player",
+    date: "2021 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Practicing daily to improve hand-eye coordination and speed.",
+      "Participating in inter-school tournaments and sports meets.",
+      "Learning advanced spin techniques and tactical gameplay.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Moksh has a natural ear for music. He quickly picks up new chords and melodies, showing great creativity and rhythm.",
     imgPath: withBase("/images/exp2.png"),
     logoPath: withBase("/images/logo2.png"),
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Guitarist",
+    date: "2022 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Learning acoustic and electric guitar through regular practice sessions.",
+      "Mastering various chords, scales, and fingerstyle techniques.",
+      "Covering favorite songs and exploring different musical genres.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Always energetic, Moksh balances his school academics with an active lifestyle, often seen cycling and exploring new trails.",
     imgPath: withBase("/images/exp3.png"),
     logoPath: withBase("/images/logo3.png"),
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Cyclist & Active Student",
+    date: "2020 - Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Completing weekend cycling routes and maintaining physical fitness.",
+      "Participating in various school activities, including science fairs and clubs.",
+      "Maintaining a balance between hobbies and 9th-grade academic goals.",
     ],
   },
 ];
@@ -207,42 +207,42 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can’t say enough good things about Moksh. He was able to take our complex school project requirements and turn them into a seamless, functional application. His problem-solving abilities are outstanding for his age.",
     imgPath: withBase("/images/client1.png"),
   },
   {
     name: "Wade Warren",
     mentions: "@wadewarren",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Moksh was a fantastic experience. He transformed our simple project idea into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him!",
     imgPath: withBase("/images/client3.png"),
   },
   {
     name: "Guy Hawkins",
     mentions: "@guyhawkins",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Moksh was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our school fair project. Moksh's enthusiasm truly stands out.",
     imgPath: withBase("/images/client2.png"),
   },
   {
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Moksh was a pleasure to work with. He turned our outdated presentation into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
     imgPath: withBase("/images/client5.png"),
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Moksh’s expertise in coding is truly impressive for a 9th grader. He delivered a robust solution for our club website, and the engagement has significantly increased. He’s a true talent!",
     imgPath: withBase("/images/client4.png"),
   },
   {
     name: "Albert Flores",
     mentions: "@albertflores",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Moksh was a pleasure to work with. He understood the project requirements perfectly and delivered a website that exceeded our expectations. His skills in frontend development are top-notch.",
     imgPath: withBase("/images/client6.png"),
   },
 ];

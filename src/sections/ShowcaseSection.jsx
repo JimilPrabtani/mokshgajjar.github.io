@@ -56,12 +56,11 @@ const AppShowcase = () => {
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Exploring Creative Solutions with School Projects like Science Fair Apps
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                A project built with React and TailwindCSS to demonstrate 
+                interactive learning and data visualization.
               </p>
             </div>
           </div>
@@ -71,20 +70,20 @@ const AppShowcase = () => {
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src={`${import.meta.env.BASE_URL}images/project2.png`}
-                  alt="Library Management Platform"
+                  alt="Student Library Tracker"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Personal Study & Book Tracker</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img
                   src={`${import.meta.env.BASE_URL}images/project3.png`}
-                  alt="YC Directory App"
+                  alt="School Club Directory"
                 />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>School Club & Activity Directory</h2>
             </div>
           </div>
         </div>

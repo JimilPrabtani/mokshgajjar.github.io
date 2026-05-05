@@ -51,12 +51,12 @@ const Hero = () => {
                                     </span>
                                 </span>
                             </h1>
-                            <h1>into Real Projects</h1>
-                            <h1>That Deliver Results</h1>
+                            <h1>into Creative Explorations</h1>
+                            <h1>That Inspire Learning</h1>
                         </div>
                         <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                            Hii! I'm Moksh, A designer and 9th grade student based in Ahmedabad with a passion
-                            for passion for code.</p>
+                            Hii! I'm Moksh, a curious 9th-grade student and designer based in Ahmedabad with a passion
+                            for coding and creative projects.</p>
                         <Button
                             text="See My Work"
                             className="md:w-80 md:h-16 w-60 h-12"
