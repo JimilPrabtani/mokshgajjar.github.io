@@ -6,7 +6,9 @@ const Particles = ({ count = 200 }) => {
 
   const particles = useMemo(() => {
     const temp = [];
+    // eslint-disable-next-line no-magic-numbers
     for (let i = 0; i < count; i++) {
+      // eslint-disable-next-line react-hooks/purity
       temp.push({
         position: [
           (Math.random() - 0.5) * 10,
@@ -18,6 +20,7 @@ const Particles = ({ count = 200 }) => {
     }
     return temp;
   }, [count]);
+
 
   useFrame(() => {
     const positions = mesh.current.geometry.attributes.position.array;

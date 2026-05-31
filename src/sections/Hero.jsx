@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import { words } from '../constants/index.js'
 import Button from '../components/button.jsx'
 import HeroExperience from '../components/HeroModels/HeroExperience.jsx'
