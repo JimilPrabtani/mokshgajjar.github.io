@@ -53,3 +53,25 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Wait for deployed Pages site
+        run: |
+          url="${{ steps.deployment.outputs.page_url }}"
+          echo "Target URL: $url"
+          for i in $(seq 1 12); do
+            status=$(curl -s -o /dev/null -w '%{http_code}' "$url" || echo "000")
+            echo "Attempt $i: $status"
+            if [ "$status" = "200" ]; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Page did not become available"
+          exit 1
+      - name: Run OWASP ZAP DAST scan
+        run: |
+          docker run --rm -v "${{ github.workspace }}:/zap/wrk" owasp/zap2docker-stable zap-baseline.py -t "${{ steps.deployment.outputs.page_url }}" -r zap-report.html
+      - name: Upload ZAP report
+        uses: actions/upload-artifact@v4
+        with:
+          name: zap-report
+          path: zap-report.html
