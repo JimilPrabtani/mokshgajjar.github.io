@@ -26,7 +26,7 @@ jobs:
       - name: Run npm audit
         run: npm audit --audit-level=high
       - name: Install Semgrep
-        run: npm install -g semgrep@1.56.0
+        run: pip install semgrep
       - name: Run Semgrep SAST scan
         run: semgrep --config=auto --json --output semgrep-report.json .
       - name: Upload Semgrep report
@@ -35,7 +35,7 @@ jobs:
           name: semgrep-report
           path: semgrep-report.json
       - name: Run Gitleaks secrets scan
-        uses: zricethezav/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v2
         with:
           args: --exit-code=1 --report-path gitleaks-report.json
       - name: Upload Gitleaks report
